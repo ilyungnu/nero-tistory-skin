@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin>
+  <information>
+    <name>네로의 스킨</name>
+    <version>1.0</version>
+    <description>
+      <![CDATA[네로말리온이 제작한 티스토리 블로그 스킨입니다.]]>
+    </description>
+    <license>
+      <![CDATA[자유롭게 수정이 가능하며, 저작권 표시하에 재배포 가능합니다.]]>
+    </license>
+  </information>
+  <author>
+    <name>neromalion</name>
+    <homepage>http://neromalion.tistory.com</homepage>
+    <email>neromalion@gmail.com</email>
+  </author>
+  <default>
+    <recentEntries>5</recentEntries>
+    <recentComments>5</recentComments>
+    <recentTrackbacks>5</recentTrackbacks>
+    <itemsOnGuestbook>10</itemsOnGuestbook>
+    <tagsInCloud>30</tagsInCloud>
+    <sortInCloud>2</sortInCloud>
+    <expandComment>0</expandComment>
+    <expandTrackback>0</expandTrackback>
+    <lengthOfRecentNotice>25</lengthOfRecentNotice>
+    <lengthOfRecentEntry>27</lengthOfRecentEntry>
+    <lengthOfRecentComment>30</lengthOfRecentComment>
+    <lengthOfRecentTrackback>30</lengthOfRecentTrackback>
+    <lengthOfLink>30</lengthOfLink>
+    <showListOnCategory>1</showListOnCategory>
+    <showListOnArchive>1</showListOnArchive>
+    <entriesOnList>9</entriesOnList>
+    <commentMessage>
+      <none>댓글이 없습니다.</none>
+      <single>댓글 &lt;span class="cnt"&gt;하나&lt;/span&gt; 달렸습니다.</single>
+    </commentMessage>
+    <trackbackMessage>
+      <none>받은 트랙백이 없고</none>
+      <single>트랙백이 &lt;span class="cnt"&gt;하나&lt;/span&gt;이고</single>
+    </trackbackMessage>
+    <tree>
+      <color>000000</color>
+      <bgColor>ffffff</bgColor>
+      <activeColor>000000</activeColor>
+      <activeBgColor>eeeeee</activeBgColor>
+      <labelLength>27</labelLength>
+      <showValue>0</showValue>
+    </tree>
+    <contentWidth>500</contentWidth>
+    <cover>
+      <![CDATA[ 
+        [
+          {
+            "name": "image",
+            "title": "image",
+            "dataType": "CUSTOM",
+            "data": {
+              "title": "image",
+              "summary": "원하는 이미지를 업로드하여 사용해 주세요",
+              "url": "",
+              "thumbnail": ""
+            }
+          }
+        ]
+      ]]>
+    </cover>
+    <liststyle>standard</liststyle>
+  </default>
+  <cover>
+    <item>
+      <name>image</name>
+      <label><![CDATA[이미지]]></label>
+	    <description><![CDATA[홈화면에 이미지를 정방형으로 출력합니다.]]></description>
+    </item>
+    <item>
+      <name>empty</name>
+      <label><![CDATA[빈 화면]]></label>
+	    <description><![CDATA[빈 화면입니다.]]></description>
+    </item>
+  </cover>
+  <liststyle>
+    <item>
+      <label>이미지</label>
+      <value>image</value>
+    </item>
+    <item>
+      <label>글만</label>
+      <value>only-typo</value>
+    </item>
+    <item>
+      <label>기본스타일</label>
+      <value>standard</value>
+    </item>
+  </liststyle>
+</skin>

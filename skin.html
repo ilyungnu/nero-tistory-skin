@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>[##_title_##]</title>
+  </head>
+  <body data-theme="dark">
+    <s_t3>
+      <header class="header">
+        <div class="header-content">
+          <div class="header-nav">
+            <a href="[##_blog_link_##]">[##_blogger_##]</a>
+          </div>
+          <div class="header-search-menu">
+            <div class="search-container">
+              <s_search>
+                <input 
+                  type="text" 
+                  name="[##_search_name_##]" 
+                  value="[##_search_text_##]" 
+                  onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }"
+                  autocomplete="off"
+                  class="search-input"/>
+                <input 
+                  value="⌕" 
+                  type="button" 
+                  onclick="[##_search_onclick_submit_##]"
+                  class="search-button"/>
+              </s_search>
+            </div>
+            <button id="btnMenu" class="menu-button">☰</button>
+            <button id="btnTheme" class="theme-button">☾</button>
+          </div>
+        </div>
+        <div id="headerMenu" class="header-menu" hidden>
+          <div class="search-container">
+            <s_search>
+              <input 
+                type="text" 
+                name="[##_search_name_##]" 
+                value="[##_search_text_##]" 
+                onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }"
+                autocomplete="off"
+                class="search-input"/>
+              <input 
+                value="⌕" 
+                type="button" 
+                onclick="[##_search_onclick_submit_##]"
+                class="search-button"/>
+            </s_search>
+          </div>
+          <div class="blog-menu">[##_blog_menu_##]</div>
+          <div class="category">[##_category_list_##]</div>
+        </div>
+      </header>
+      
+      <main class="main">
+        <s_cover_group>
+        <!-- home -->
+          <s_cover_rep>
+            <s_cover name="image">
+              <img class="home-img" src="./images/sunlight.jpg">
+            </s_cover>
+            <s_cover name="empty"></s_cover>
+          </s_cover_rep>
+        </s_cover_group>
+
+        <s_list>
+        <!-- list -->
+          <div class="category-nav">[##_list_conform_##]</div>
+          <span class="list-count">[##_list_count_##]</span>
+          <div class="list-container">
+            <div class="list-item-container [##_list_style_##]">
+              <s_list_rep>
+                <a href="[##_list_rep_link_##]">
+                  <div class="list-item-typo">
+                    <p class="list-item-title">[##_list_rep_title_text_##]</p>
+                    <p class="list-item-date">[##_list_rep_regdate_##]</p>
+                  </div>
+                  <s_list_rep_thumbnail>
+                    <img class="list-img" src="[##_list_rep_thumbnail_##]">
+                  </s_list_rep_thumbnail>
+                </a>
+              </s_list_rep>
+            </div>
+
+            <s_list_empty>
+              <div class="list-item-is-empty">
+                <p>목록에 글이 없습니다</p>
+              </div>
+            </s_list_empty>
+            
+            <s_paging>
+              <div class="list-paging">
+                <a [##_prev_page_##]>←</a>
+                  <s_paging_rep>
+                    <a [##_paging_rep_link_##] class="num">[##_paging_rep_link_num_##]</a>
+                  </s_paging_rep>
+                <a [##_next_page_##]>→</a>
+              </div>
+            </s_paging>
+          </div>
+        </s_list>
+
+        <s_article_rep>
+          <s_permalink_article_rep>
+          <!-- article -->
+            <span class="category-nav">[##_article_rep_category_##]</span>
+            <article class="article">
+              <div class="article-header">
+                <p class="article-title">[##_article_rep_title_##]</p>
+                <p class="article-date">[##_article_rep_date_##]</p>
+              </div>
+              <div class="article-content">[##_article_rep_desc_##]</div>
+              <div class="article-list">
+                <a class="back-to-category" href="[##_article_rep_category_link_##]">
+                  목록으로 돌아가기
+                </a>
+                <div class="article-list-paging">
+                  <s_article_prev>
+                    <a class="article-list-prev" href="[##_article_prev_link_##]">
+                      <span>←</span>
+                      <div>
+                        <span>이전 글</span>
+                        <span>[##_article_prev_title_##]</span>
+                      </div>
+                    </a>
+                  </s_article_prev>
+                  <s_article_next>
+                    <a class="article-list-next" href="[##_article_next_link_##]">
+                      <div>
+                        <span>다음 글</span>
+                        <span>[##_article_next_title_##]</span>
+                      </div>
+                      <span>→</span>
+                    </a>
+                  </s_article_next>
+                </div>
+              </div>
+            </article>
+          </s_permalink_article_rep>  
+        </s_article_rep>
+
+        <s_page_rep>
+        <!-- page -->
+          <article class="article">
+            <a class="non-category-nav" href="[##_article_rep_link_##]">[##_article_rep_title_##]</a>
+            <div class="article-content">[##_article_rep_desc_##]</div>
+          </article>
+        </s_page_rep>
+
+        <s_guest>
+        <!-- guestbook -->
+          <article class="article">
+            <a class="non-category-nav" href="/guestbook">방명록</a>
+            <!-- guestbook input form -->
+            <s_guest_input_form>
+              <div class="guestbook-input-form">
+                <div class="guest-talk">
+                  <div class="guest-info">
+                    <s_guest_member>
+                      <s_guest_form>
+                        <div>
+                          <label for="name">이름</label>
+                          <input type="text" name="[##_guest_input_name_##]" value="[##_guest_name_##]" />
+                        </div>
+                        <div>
+                          <label for="password">패스워드</label>
+                          <input type="password" maxlength="8" name="[##_guest_input_password_##]" value="[##_guest_password_##]" />
+                        </div>
+                        <div>
+                          <label for="homepage">홈페이지</label>
+                          <input type="text" name="[##_guest_input_homepage_##]" value="[##_guest_homepage_##]" />
+                        </div>
+                      </s_guest_form>
+                    </s_guest_member>
+                  </div>
+                  <textarea id="taGuestTalk" name="[##_guest_textarea_body_##]"></textarea>
+                </div>
+                <input type="submit" value="보내기" onclick="if(taGuestTalk.value.trim() != '') [##_guest_onclick_submit_##]"/>
+              </div>
+            </s_guest_input_form>
+
+            <!-- guestbook list -->
+            <s_guest_container>
+              <s_guest_rep>
+                <div id="[##_guest_rep_id_##]" class="guestbook-container">
+                  <div class="guestbook-header">
+                    <span class="guest-name">[##_guest_rep_name_##]</span>
+                    <span class="guestbook-write-date">[##_guest_rep_date_##]</span>
+                  </div>
+                  <div class="guestbook-content">
+                    <p>[##_guest_rep_desc_##]</p>
+                    <a class="guestbook-delete-button" href="#" onclick="[##_guest_rep_onclick_delete_##]">✕</a>
+                    <a class="guestbook-edit-button" href="#" onclick="[##_guest_rep_onclick_reply_##]">✎</a>
+                  </div>
+                </div>
+                <s_guest_reply_container>
+                  <s_guest_reply_rep>
+                    <div class="guestbook-reply-content">
+                      <p>↳</p>
+                      <div id="[##_guest_rep_id_##]" class="guestbook-container">
+                        <div class="guestbook-header">
+                          <span class="guest-name">[##_guest_rep_name_##]</span>
+                          <span class="guestbook-write-date">[##_guest_rep_date_##]</span>
+                        </div>
+                        <div class="guestbook-content">
+                          <p>[##_guest_rep_desc_##]</p>
+                          <a class="guestbook-delete-button" href="#" onclick="[##_guest_rep_onclick_delete_##]">✕</a>
+                          <a class="guestbook-edit-button" href="#" onclick="[##_guest_rep_onclick_reply_##]">✎</a>
+                        </div>
+                      </div>
+                    </div>
+                  </s_guest_reply_rep>
+                </s_guest_reply_container>
+              </s_guest_rep>
+            </s_guest_container>
+          </article>
+        </s_guest>
+      </main>
+
+      <footer class="footer">
+        <div class="blog-menu">[##_blog_menu_##]</div>
+        <div class="category">[##_category_list_##]</div>
+        <div class="copyright">
+          <p>Copyright 2024. neromalion all rights reserved.</p>
+        </div>
+      </footer>
+
+      <div>
+        <button id="btnScrollUp" class="scroll-up-button">↑</button>
+      </div>
+    </s_t3>
+    <script>
+    const myBlogUrl = "neromalion-dev.tistory.com"
+
+    // create header navigation
+    const CreateHeaderNav = () => {
+      try{ 
+        const myRoute = document.querySelector(".category-nav");
+        const nav = document.querySelector(".header-nav");
+
+        // search result
+        if(window.location.href.indexOf(myBlogUrl + '/search') > 0){
+          let routes = myRoute.innerText
+          let listCount = document.querySelector(".list-count");
+
+          myRoute.remove()
+          nav.innerHTML += `
+            <span>/</span>
+            <span>${routes}</span>
+            `
+
+          // list count
+          if(listCount != null) {
+            listCount.remove()
+            nav.appendChild(listCount)
+          }
+
+          return 0
+        }
+
+        // category
+        if(myRoute != null){
+          const routes = myRoute.innerText.split("/");
+          const listCount = document.querySelector(".list-count");
+
+          myRoute.remove()
+          nav.innerHTML += `
+            <span>/</span>
+            <a href="/category/${routes[0]}">${routes[0]}</a>
+            `
+          routes.reduce((acc, cur, idx) => {
+            if(idx < routes.length) nav.innerHTML += `<span>/</span>`
+            acc = acc + "/" +  cur
+            nav.innerHTML += `<a href="/category/${acc}">${cur}</a>`
+          })
+
+          // list count
+          if(listCount != null) {
+            listCount.remove()
+            nav.appendChild(listCount)
+          }
+
+          return 0
+        }
+
+        // non category(page, guestbook)
+        if(myRoute == null){
+          const singleRoute = document.querySelector(".non-category-nav")
+
+          singleRoute.remove()
+          nav.innerHTML += `<span>/</span>`
+          nav.appendChild(singleRoute)
+
+          return 0
+        }
+      }
+      catch{}
+    }
+
+    // header menu
+    const AddHeaderMenuAnim = () =>{
+      try{
+        const btnMenu = document.getElementById('btnMenu')
+        const headerMenu = document.getElementById('headerMenu')
+
+        btnMenu.addEventListener('click',()=>{
+          headerMenu.hidden = !headerMenu.hidden
+        })
+      }
+      catch{}
+    }
+
+    // scroll up
+    const scrollUpAnim = () => {
+      const c = document.documentElement.scrollTop || document.body.scrollTop;
+      if (c > 0) {
+        window.requestAnimationFrame(scrollUpAnim);
+        window.scrollTo(0, c - c / 4);
+      }
+    };
+
+    const ScrollUp = () => {
+      try{
+        const btnScrollUp = document.getElementById('btnScrollUp')
+
+        btnScrollUp.addEventListener('click',()=>{
+          scrollUpAnim()
+        })
+      }
+      catch{}
+    }
+
+    // set theme
+    const mql = window.matchMedia('(prefers-color-scheme: dark)');
+    const theme = localStorage.getItem('theme');
+    const btnTheme = document.getElementById('btnTheme');
+
+    let OnDarkMode = () => {
+      document.body.setAttribute('data-theme', 'dark');
+      btnTheme.innerText = "☾"
+      localStorage.setItem('theme', 'dark');
+    };
+    let OnLightMode = () => {
+      document.body.setAttribute('data-theme', 'light');
+      btnTheme.innerText = "☼"
+      localStorage.setItem('theme', 'light');
+    };
+
+    btnTheme.addEventListener('click', () => {
+      document.body.getAttribute('data-theme') != 'dark' ? OnDarkMode() : OnLightMode();
+    });
+
+    // change system theme(dynamic)
+    mql.addEventListener('change', () => {
+      mql.matches ? OnDarkMode() : OnLightMode();
+    });
+
+    // get local theme OR system theme
+    if (theme) {
+      document.body.setAttribute('data-theme', theme);
+      theme == "dark" ? btnTheme.innerText = "☾" : btnTheme.innerText = "☼"
+    } else {
+      mql.matches ? OnDarkMode() : OnLightMode();
+    }
+
+    // run function
+    CreateHeaderNav()
+    AddHeaderMenuAnim()
+    ScrollUp()
+
+    </script>
+  </body>
+</html>
