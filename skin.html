@@ -234,7 +234,7 @@
       </div>
     </s_t3>
     <script>
-    const myBlogUrl = "neromalion-dev.tistory.com"
+    const myBlogUrl = "[##_blog_link_##]".replace("https://","")
 
     // create header navigation
     const CreateHeaderNav = () => {
@@ -243,7 +243,7 @@
         const nav = document.querySelector(".header-nav");
 
         // search result
-        if(window.location.href.indexOf(myBlogUrl + '/search') > 0){
+        if(window.location.href.indexOf(myBlogUrl + 'search') > 0){
           let routes = myRoute.innerText
           let listCount = document.querySelector(".list-count");
 
