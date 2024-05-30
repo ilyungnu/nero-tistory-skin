@@ -227,6 +227,7 @@ body > * {
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
+  border-radius: 2px;
 }
 
 /* list */
@@ -259,6 +260,7 @@ body > * {
   height: 100%;
   aspect-ratio: 1;
   object-fit: cover;
+  border-radius: 2px;
 }
 
 /* standard list */
