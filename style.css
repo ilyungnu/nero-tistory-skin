@@ -328,7 +328,10 @@ body > *{
   font-size: 14px;
   color: var(--secondary-color);
 }
-.article-content > :not(.contents_style){
+
+/* 공감, 저작권 표시 등 숨기기 */
+.article-content > :not(.contents_style),
+.article-content div.container_postbtn {
   display: none;
 }
 
